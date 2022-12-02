@@ -1,0 +1,13 @@
+lives = 3
+correct_answer= 150
+while lives >0:
+    answer=int(input(" 100 + 50 =" ))
+    if answer == correct_answer:
+        print(" Correct! You won!")
+        break
+    else:
+        print(" Wrong! try again!")
+        lives = lives - 1
+
+else:
+    print("You lose!")

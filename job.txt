@@ -1,0 +1,157 @@
+package again;
+import java.util.Scanner;
+public class JobAppliationSystem {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+
+		String  Firstname, choice, Midlename, Citezenship, Religion, lastname, Completeadress,Homephone, Mobilephone, Skill,  Highschool, University,Gender, 
+		Dateofbirth,emailadress,Postalcode, adress, Language, Position;
+				int age;
+				
+				do {
+					System.out.println("-----------------------------------------------------------------------------------------------------");
+					System.out.println("                                       Job Application Form                                 ");
+					System.out.println("-----------------------------------------------------------------------------------------------------");
+					System.out.println("-----------------------------------");
+					System.out.println(" Section 1 : PERSONAL INFORMATION");
+					System.out.println("-----------------------------------");
+					System.out.println(" \nEnter your First name : ");
+					Firstname = input.nextLine();
+					
+					System.out.println(" Enter your Middle name :");
+					Midlename = input.nextLine();
+					
+					System.out.println(" Enter your last name :");
+					lastname = input.nextLine();
+					
+					System.out.println(" Enter your complete adress:");
+					Completeadress = input.nextLine();
+					
+					System.out.println(" Enter your Date of birth : ");
+					Dateofbirth = input.nextLine();
+					
+					System.out.println(" Enter your Postal code:");
+					Postalcode = input.nextLine();
+					
+					System.out.println(" Enter Home phone:");
+					Homephone = input.nextLine();
+					
+					System.out.println(" Enter Mobile phone :");
+					Mobilephone = input.nextLine();
+					
+					System.out.println(" Email adress :");
+					emailadress = input.nextLine();
+					
+					System.out.println(" Enter your age : ");
+					age = input.nextInt();
+					
+					System.out.println(" Enter your gender : ");
+					Gender = input.nextLine();
+					input.nextLine();
+					
+					System.out.println(" Enter your Citezenship : ");
+					Citezenship = input.nextLine();
+					
+					System.out.println(" Enter your Religion : ");
+					Religion = input.nextLine();
+					
+					System.out.println("-----------------------");
+					System.out.println(" SECTION 2 : EDUCATONAL BACKGROUND ");
+					System.out.println("-----------------------");
+					System.out.println(" Enter Highchool ");
+					Highschool = input.nextLine();
+					
+					System.out.println(" Enter University : ");
+					University = input.nextLine();
+					
+					System.out.println("----------------------");
+					System.out.println(" SECTION 3 : SKILLS ");
+					System.out.println("----------------------");
+					
+					System.out.println(" Enter your Skills :");
+					Skill = input.nextLine();
+					
+					System.out.println(" Do you speak any foriegn languange? If your answer is YES please write down the foreign language that you can speak.\n");
+				Language = input.nextLine();
+			
+				System.out.println(" What position do you wish to apply?\n");
+				System.out.println(" This our Available work positions :");
+				System.out.println(" -General Manager");
+				System.out.println(" -Assistant Manager");
+				System.out.println("  -Executive Chef");
+				System.out.println(" -Sous Chef ");
+				System.out.println(" - Pastry chef");
+				System.out.println(" - Kitchen Manager");
+				System.out.println(" - Food & Beverage Manager");
+				System.out.println(" -Prep cook");
+				System.out.println(" -Sommelier");
+				System.out.println(" -Runner");
+				System.out.println(" -Cashier");
+				System.out.println(" - Dishwasher");
+				System.out.println(" - Janitor/Janitress\n");
+				
+			System.out.println(" Choosen Position :");
+				Position	 = input.nextLine();
+				
+					System.out.println("-----------------------------------------------------------------------------------------------------");
+					
+					System.out.println("-----------------------------------------------------------------------------------------------------");
+					System.out.println("                                          Personal Information                                       ");
+					System.out.println("-----------------------------------------------------------------------------------------------------");
+					
+					System.out.println(" Complete name :" +Firstname+Midlename+lastname );
+					
+					
+					System.out.println(" Complete Adress : " + Completeadress);
+					
+				
+					System.out.println("  Date of birth : " + Dateofbirth);
+					
+					System.out.println(" Portal code :" + Postalcode); 
+					
+					System.out.println(" Home phone :"+ Homephone);
+					
+					System.out.println(" Mobile phone :" + Mobilephone);
+					
+					System.out.println(" Email adress :"+emailadress);
+					
+					System.out.println(" Enter your age :" + age);
+				
+					
+					System.out.println(" Enter your Gender : " + Gender);
+					
+					
+					System.out.println(" Enter your Citezenship : " +Citezenship);
+				
+					System.out.println(" Enter your Religion : " + Religion);
+					
+					System.out.println(" Applying for :" + Position);
+					
+					
+					
+					System.out.println(" Do you want to fill up another Applicattion Form? If YES please choosse Y and if NO pleasses choosse N [ Y/N]");
+					choice = input.nextLine();
+					
+					
+				}
+				while(choice.equalsIgnoreCase("Y"));
+				input.close();
+				if(choice.equalsIgnoreCase("N")) {
+					System.out.println("------------------------------------------------------------------------------------------------------");
+					System.out.println("  Please wait for 3-4 days we will update you through Call and Email please proceed to the office for more inquirie, Thank you.                                         ");
+					System.out.println("------------------------------------------------------------------------------------------------------");
+				}
+				else{
+					System.out.println(" ERROR REPORTED! PLEASE ENTER A CORRECT INFORMATION!");
+					
+				}
+
+
+
+
+		  }
+
+	}
+
